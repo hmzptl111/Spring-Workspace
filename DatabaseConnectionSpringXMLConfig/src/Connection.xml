@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="mysql" class="com.producer.MySQLConnection">
+		<property name="url" value="mysql_url"></property>
+		<property name="username" value="mysql_user"></property>
+		<property name="password" value="mysql_password"></property>
+	</bean>
+	
+	<bean id="oracle" class="com.producer.OracleConnection">
+		<constructor-arg name="url" value="oracle_url"></constructor-arg>
+		<constructor-arg name="username" value="oracle_user"></constructor-arg>
+		<constructor-arg name="password" value="oracle_password"></constructor-arg>
+	</bean>
+	
+	<bean id="postgres" class="com.producer.PostgreSQL">
+		<constructor-arg name="url" value="postgres_url"></constructor-arg>
+		<constructor-arg name="username" value="postgres_user"></constructor-arg>
+		<constructor-arg name="password" value="postgres_password"></constructor-arg>
+	</bean>
+
+	<bean id="sybase" class="com.producer.SybaseConnection">
+		<property name="url" value="sybase_url"></property>
+		<property name="username" value="sybase_user"></property>
+		<property name="password" value="sybase_password"></property>
+	</bean>
+	
+	<bean id="dbConnection" class="com.producer.DBConnectionProducer">
+		<property name="connection" ref="oracle"></property>
+	</bean>
+</beans>

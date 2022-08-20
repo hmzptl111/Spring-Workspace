@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="sum" class="com.operator.Sum">
+		<constructor-arg name = "n1" value = "10"></constructor-arg>
+		<constructor-arg name = "n2" value = "20"></constructor-arg>
+	</bean>
+
+	<bean id="subtract" class="com.operator.Subtract">
+		<constructor-arg name = "n1" value = "10"></constructor-arg>
+		<constructor-arg name = "n2" value = "20"></constructor-arg>
+	</bean>
+
+	<bean id="product" class="com.operator.Product">
+		<property name="n1" value = "10"></property>
+		<property name="n2" value = "20"></property>
+	</bean>
+
+	<bean id="divide" class="com.operator.Divide">
+		<property name="n1" value = "10"></property>
+		<property name="n2" value = "20"></property>
+	</bean>
+</beans>

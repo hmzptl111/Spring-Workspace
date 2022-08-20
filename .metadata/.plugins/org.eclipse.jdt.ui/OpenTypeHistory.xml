@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=Performance/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.producer{Instrument.java[Instrument" modifiers="513" timestamp="1659777889115"/>
+    <typeInfo handle="=Performance/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.producer{Performer.java[Performer" modifiers="513" timestamp="1659775538997"/>
+    <typeInfo handle="=DatabaseConnectionSpringXMLConfig/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.producer{Connection.java[Connection" modifiers="513" timestamp="1659937399180"/>
+    <typeInfo handle="=SpringLifecycle/C:\/Users\/Hamza\/.m2\/repository\/org\/springframework\/spring-beans\/5.3.22\/spring-beans-5.3.22.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework=/=/maven.artifactId=/spring-beans=/=/maven.version=/5.3.22=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.beans.factory.config(BeanPostProcessor.class[BeanPostProcessor" modifiers="1537" timestamp="1659595572197"/>
+</typeInfoHistroy>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="sing" class="com.producer.Singer">
+		<property name="song" value="Gulabi Aankhen"></property>
+	</bean>
+	
+	<bean id="dance" class="com.producer.Dancer">
+		<property name="style" value="Classical"></property>
+	</bean>
+	
+	<bean id="juggle" class="com.producer.Juggler">
+		<property name="balls" value="9"></property>
+	</bean>
+	
+	<bean id="guitar" class="com.producer.Guitar">
+	</bean>
+	
+	<bean id="drum" class="com.producer.Drum">
+	</bean>
+	
+	<bean id="flute" class="com.producer.Flute">
+	</bean>
+	
+	<bean id="instrumentalist" class="com.producer.Instrumentalist">
+		<constructor-arg name="instrument" ref="guitar"></constructor-arg>
+	</bean>
+</beans>
